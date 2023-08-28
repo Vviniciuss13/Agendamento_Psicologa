@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.calendario{
+    height: 375px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: gray;
+    display: grid;
+    place-items: center;
+    font-family: Delina;
+    margin: 0 auto;
+}
+
+.calendario-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #064752;
+}
+
+.calendario-header .escolher_mes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #064752;
+    padding: 10px;
+}
+
+.calendario-body{
+    padding: 5px;
+}
+
+.calendario_semana{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+}
+
+.calendario_semana div{
+    display: grid;
+    place-items: center;
+    color: #064752;
+}
+
+.calendario_dia{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: #1D858C;
+}
+
+.calendario_dia div{
+    width: 30px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.escolher_mes{
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: context-menu;
+}
+
+.escolher_ano{
+    display: flex;
+    align-items: center;
+}
+
+.mudar-ano{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.calendario_dia div span{
+    position: absolute;
+}
+
+.calendario_dia div:hover span{
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendario_dia div:hover span:nth-child(1),
+.calendario_dia div:hover span:nth-child(3){
+    height: 100%;
+}
+
+.calendario_dia div span:nth-child(1){
+    bottom: 0;
+    left: 0;
+}
+
+.calendario_dia div span:nth-child(3){
+    top: 0;
+    right: 0;
+}
+
+.calendario_dia div:hover span:nth-child(2),
+.calendario_dia div:hover span:nth-child(4){
+    width: 100%;
+}
+
+.calendario_dia div span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+.calendario_dia div span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.calendario_dia div:hover span:nth-child(2){
+    transition-delay: 0.2s;
+}
+
+.calendario_dia div:hover span:nth-child(3){
+    transition-delay: 0.4s;
+}
+
+.calendario_dia div:hover span:nth-child(4){
+    transition-delay: 0.6s;
+}
+
+.calendario_dia div.dataAtual{
+    background-color: #9BA090;
+    color: white;
+    border-radius: 50%;
+}
+
+.calendario-dia div.dataAtual span{
+    display: none;
+}
+
+#dia{
+    text-decoration: none;
+    color: #1D858C;
+}
+
+#dia:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9BA090;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.mes_lista {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    color: #150e29;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    transform: scale(1.5);
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+}
+
+.mes_lista.show{
+    transform: scale(0);
+    visibility: visible;
+    pointer-events: visible;
+}
+
+.mes_lista > div {
+    display: grid;
+    place-items: center;
+}
+
+.mes_lista > div > div {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mes_lista > div > div.hover{
+    background-color: #120e29;
+}
+
+#ano{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #064752;
+}
+
+#anterior_mes, #proximo_mes{
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+    border-radius: 50%;
+    padding: 2px;
+    color: white !important;
+}
+
+.yellow{
+    background-color: rgb(170, 170, 40);
+    border-radius: 50%;
+    padding: 2px;
+    color: white !important;
+}
+
+.red{
+    background-color: rgb(163, 50, 50);
+    border-radius: 50%;
+    padding: 2px;
+    color: white !important;
+}

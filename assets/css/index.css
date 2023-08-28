@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(6,71,82);
+    background: linear-gradient(90deg, rgba(6,71,82,1) 0%, rgba(29,133,140,1) 35%, rgba(173,217,209,1) 100%);
+    font-family: Nunito;
+}
+
+.img{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.loader{
+    border: 16px solid #fff;
+    border-radius: 50%;
+    border-top: 16px solid rgba(0, 255, 255, 0.26);
+    width: 65px;
+    height: 65px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    margin-top: -55px;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+

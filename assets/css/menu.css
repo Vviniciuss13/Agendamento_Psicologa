@@ -1,0 +1,87 @@
+body{
+    background-color: #ADD9D1;
+}
+h1{
+    font-family: Vietnam;
+}
+h2{
+    font-family: Vietnam;
+}
+h4{
+    font-family: Vietnam-Regular;
+}
+i:hover{
+    color: #e6e6e6;
+    transition-delay: 3ms;
+}
+div.tabela{
+    width: 60%;
+    margin: 30px auto;
+    padding: 0.75rem;
+}
+.table-bordered{
+    background: white;
+    color: #064752;
+    font-family: Vietnam;
+    border-radius: 25px;
+    border-style: hidden !important;
+}
+#hoje{
+    width: 230px !important;
+}
+td{
+    text-align: center;
+}
+
+.alert{
+    font-family: Vietnam !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+ul{
+    padding: 0%;
+    font-family: Vietnam;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+ul li ul{
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    background-color: #1D858C;
+    padding: 5px;
+}
+
+ul li:hover > ul{
+    display: block;
+}
+ul li ul li:hover{
+    background-color: #064752;
+}
+
+a, a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.form-control{
+    position: absolute;
+    left: 500px;
+    margin: auto;
+    width: 20%;
+    padding: 0px;
+    height: 500px;
+    margin-top: 0px;
+    border-radius: 25px;
+}
+
+textarea{
+    font-family: Vietnam;
+    font-size: 20px;
+    border-radius: 20px;
+}

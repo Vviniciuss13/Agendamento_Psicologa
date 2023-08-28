@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Vietnam;
+    src: url(../fonts/be-vietnam/BeVietnam-Bold.ttf);
+}
+@font-face {
+        font-family: Vietnam-Regular;
+        src: url(../fonts/be-vietnam/BeVietnam-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito/static/Nunito-Light.ttf);
+}
+@font-face{
+    font-family: Kollektif;
+    src: url(../fonts/kollektif/Kollektif.ttf);
+}
+@font-face {
+    font-family: Delina;
+    src: url(../fonts/Delinda\ Agatha.ttf);
+}

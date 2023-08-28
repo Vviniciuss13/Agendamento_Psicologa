@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(6,71,82);
+    background: linear-gradient(90deg, rgba(6,71,82,1) 0%, rgba(29,133,140,1) 35%, rgba(173,217,209,1) 100%);
+    font-family: Nunito;
+    overflow: hidden;
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  
+    .fade{
+      opacity:0;
+     -webkit-animation: fadeIn 3s ease-in-out;
+     -moz-animation: fadeIn 3s ease-in-out;
+     -o-animation: fadeIn 3s ease-in-out;
+     animation: fadeIn 3s ease-in-out; 
+     -webkit-animation-fill-mode:forwards;
+     -moz-animation-fill-mode:forwards;
+     -o-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+    }
+
+     div.container {
+        justify-content: center; 
+    }
+
+     .card{
+        width: 20rem;
+        height: 15rem;
+        background-color: #fff;
+        float: left;
+        border: none;
+        margin: 56px;
+        border-radius: 10% !important;
+      }
+
+      .card-body{
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          font-size: 20px; 
+      }
+
+      .header{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        color:rgb(5, 131, 131);
+      }
+
+      a{
+        margin: 30px;
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    .chart-container{
+        position: relative;
+        margin: auto;
+        height: 110vh;
+        width: 50vw;
+        }
+
+    .chart-container p{
+        color: #fff;
+    }  
+
+
+
+    

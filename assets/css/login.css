@@ -1,0 +1,61 @@
+body{
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 100vh;
+    max-height: 100vh;
+}
+form{
+    margin: 10% 20% 10% 20%;
+    border-radius: 20px;
+    background-color: rgba(82,46,21,0.88);
+    justify-content: center;
+    padding: 30px 50px 30px;
+}
+.form-conteudo{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.form-conteudo input{
+    border: none;
+    border-bottom: 1px #DCDDD7 solid;
+    background: rgba(82,46,21,0.1);
+    color: white;
+}
+.form-conteudo p{
+    float: left;
+}
+
+.form-conteudo button{
+    border-radius: 20px;
+    font-family: Kollektif;
+    font-size: large;
+    background: #3d210e;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.btn-cadastrar{
+    background: #3d210e;
+    color: white;
+    border: none;
+    width: 20%;
+    text-align: center;
+    float: right;
+    margin-left: auto;
+}
+
+.btn-cadastrar:hover{
+    background: #2e180a;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+i{
+    font-size: 30px;
+    margin-right: 17px;
+}

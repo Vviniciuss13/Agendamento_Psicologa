@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    min-height: 100vh;
+}
+
+/*___________________________________________NAV_____________________________________________*/
+
+/* top: 30%;
+transform: translateY(-30%);*/
+
+nav{ 
+    background: #79B5AF;
+    flex-grow: 1;
+}
+
+ul{
+list-style: none;
+}
+nav #card{
+    margin-top: 60%;
+    margin-left: 50px;
+/*position: absolute;   NO CENTRO DA TELA
+top: 50%;
+left: 50%;
+margin-top: -75px; /* Metade da altura 
+  margin-left: -125px; /* Metade da largura */
+}
+nav ul li {
+float: left;
+}
+nav ul li a{
+color: #1D858C;
+font-size: 30px;
+text-decoration: none;
+transition: all 0.5 ease;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+nav ul li a:hover{
+color: #6cc9ce !important;
+}
+nav #menu{
+    margin-top: 15%;
+}
+nav #menu ul li{
+    width: 45%;
+    float: left;
+    padding-top:24px;
+}
+
+nav #menu ul li a{
+color: #1D858C;
+font-size: 30px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+nav #menu ul li a:hover{
+color: #fff;
+}
+
+/*____________________________________CONTEUDO____________________________________________*/
+article{ /*conteudo*/
+    height: auto;
+    flex-grow: 8;
+    background: #ADD9D1;
+}
+
+.article-menu ul li{
+    width: 8%;
+    float: right;
+}
+
+.article-menu ul li a{
+    color: #1D858C;
+    font-size: 36px;
+    margin-left: auto;       
+    margin: 10px 15px; /*Margem superior e inferior de 10px. Margem esquerda e direita de 15px.*/
+}
+
+.article-menu ul li a:hover{
+    color: #fff;
+}
+
+textarea, input:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+/*________________________________________________________________________________________*/
+div.tabela{
+    width: 100%;
+    margin: 0px auto;
+    padding: 0.75rem;
+}
+
+.table-bordered{
+    background: white;
+    color: #064752;
+    font-family: Vietnam;
+    border-radius: 25px;
+    border-style: hidden !important;
+    font-size: 15px;
+}
+
+.article-menu ul li button{
+    color: #1D858C;
+font-size: 30px;
+text-decoration: none;
+transition: all 0.5 ease;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: rgba(127, 17, 224, 0);
+border: none;
+}
+
+.article-menu ul li button:hover{
+    color: white;
+}
+
+.calendario{
+    margin-top: 10px !important;
+}

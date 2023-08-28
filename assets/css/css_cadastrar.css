@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+  }
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  
+    .fade{
+      opacity:0;
+     -webkit-animation: fadeIn 1s ease-in-out;
+     -moz-animation: fadeIn 1s ease-in-out;
+     -o-animation: fadeIn 1s ease-in-out;
+     animation: fadeIn 1s ease-in-out; 
+     -webkit-animation-fill-mode:forwards;
+     -moz-animation-fill-mode:forwards;
+     -o-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+    }
+
+body{
+    background: rgb(6,71,82);
+    background: linear-gradient(90deg, rgba(6,71,82,1) 0%, rgba(29,133,140,1) 35%, rgba(173,217,209,1) 100%);
+    font-family: Nunito;
+    overflow: hidden;
+}
+a{
+    margin: 30px;
+    padding: 10px;
+    margin-left: 0px;
+}
+
+      .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 45rem;
+        padding: 2rem;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+      }
+      
+      .form-conteudo{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-family: Nunito;
+        font-size: 16px;
+    }
+    .form-conteudo input{
+        border: none;
+        border-bottom: 1px #DCDDD7 solid;
+        background: transparent !important;
+        color: white !important;
+        box-shadow: 0 0 0 0 !important;
+        outline: 0 !important;
+    }
+
+   .input-esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .input-esquerda input{
+        width: 30%;
+    }
+   #input-direita{
+    margin-left: 70px;
+   }
+   .input-numero{
+    width: 30%;
+   }
+
+   div.botoes{
+    display: flex;
+    justify-content: end;
+}
+
+button.cadastrar{
+    background-color: rgb(6,71,82);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: end;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 10px;
+    cursor: pointer;
+    border-radius: 50px !important;
+}
+
+button.cadastrar:hover{
+    background: rgb(147, 248, 255);
+    color: rgb(6,71,82);
+    transition-duration: 0.5s;
+}
+
+button.cancelar{
+    background-color: white;
+    border: none;
+    color: #1D858C;
+    padding: 10px 20px;
+    text-align: end;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 10px;
+    cursor: pointer;
+    border-radius: 50px !important;
+}
+
+button.cancelar:hover{
+    background-color: #1D858C;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
